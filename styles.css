@@ -657,24 +657,28 @@ footer svg {
         grid-column: 1;
         grid-row: 1;
     }
-    
+
 }
 
 @media screen and (min-width: 1280px) {
     body {
         width: 1280px;
     }
+
     nav {
         width: 1280px;
     }
-    header  {
+
+    header {
         height: 735px;
     }
-    h1{
+
+    h1 {
         text-align: center;
         padding-bottom: 20px;
         padding-top: 100px;
     }
+
     menu {
         display: flex;
         flex-direction: column;
@@ -685,72 +689,92 @@ footer svg {
         height: 523px;
         border: 2px solid #EB5428;
     }
+
     menu li {
         padding-bottom: 50px;
     }
+
     header img {
         width: 30%;
         position: relative;
         left: 144px;
         top: -578px;
     }
-    header  p {
+
+    header p {
         width: 40%;
         position: relative;
         top: -1160px;
         left: 600px;
     }
+
     form {
         top: -1725px;
         left: 410px;
     }
+
     #details {
         background-color: #000000;
         color: #7ABFBF;
     }
+
     #details ul {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
     }
+
     #details li span::after {
         content: "\a";
         white-space: pre;
     }
+
     #recipe {
         grid-template-columns: 1fr 3fr;
     }
+
     #sideDishes {
         height: 400px;
     }
+
     #sideDishes div {
         grid-template-columns: repeat(4, 1fr);
     }
+
     #sideDishes img {
         width: 60%;
     }
+
     #sideDishes h3 {
         top: 240px;
         left: 10px;
     }
-    #sideDishes p, #sideDishes dl {
+
+    #sideDishes p,
+    #sideDishes dl {
         top: 50px;
         left: 10px;
     }
+
     #footer {
         grid-template-columns: 1fr 2fr;
     }
-    #social ul, #social svg {
+
+    #social ul,
+    #social svg {
         padding: 15px;
     }
+
     #social svg {
         top: 0px;
         left: -65px;
     }
+
     #social ul {
         position: relative;
         left: 150px;
         top: -40px;
     }
+
     footer p {
         left: 150px;
         top: -50px;
