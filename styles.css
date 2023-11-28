@@ -1,0 +1,759 @@
+/*  -------COLORS------------
+    #0D0D0D - Dark
+    #F2F2F2 - Light Grey
+    #7ABFBF - Dark Teal
+    rgba(122,191,191,.5) - Light/Transparent Teal
+    #EB5428 - Orange
+    414, 768, 1280
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+/*  --------------RESET--------------------- 
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------RECIPE----------- */
+html {
+    background-color: rgba(122, 191, 191, .5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 414px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+
+/* --------FONTS------------ */
+h1,
+h2,
+h3,
+nav a,
+nav span,
+menu li,
+#social li,
+footer {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+p,
+dd,
+li,
+nav,
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+nav a,
+nav span,
+menu li,
+#social li,
+footer {
+    font-size: 20px;
+}
+
+/* ---------HEADER--------- */
+header {
+    padding-top: 250px;
+}
+
+header img {
+    width: 100%;
+}
+
+menu {
+    padding: 40px 10px 10px 10px;
+    text-align: center;
+}
+
+menu li {
+    display: inline-block;
+}
+
+menu li a {
+    text-decoration: none;
+    color: #EB5428;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+}
+
+menu button {
+    background-color: transparent;
+}
+
+menu li a:visited {
+    color: #EB5428;
+}
+
+menu button {
+    color: #EB5428;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    padding: 0px;
+}
+
+menu svg {
+    cursor: pointer;
+    position: relative;
+    top: -15px;
+    left: -40px;
+}
+
+
+header p {
+    padding: 15px 10px;
+    line-height: normal;
+}
+
+/* -----------DETAILS-------*/
+#details h2 {
+    padding-top: 10px;
+}
+
+#details ul {
+    padding: 10px;
+}
+
+#details li {
+    padding: 5px 0px;
+}
+
+#details li span {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+/* ---------INGREDIENTS------------ */
+#ingredients h2 {
+    padding-top: 10px;
+}
+
+#ingredients ul {
+    padding: 20px;
+}
+
+#ingredients li {
+    list-style: disc;
+    padding: 5px;
+}
+
+/* --------DIRECTIONS--------------- */
+#directions h2 {
+    padding-top: 10px;
+}
+
+#directions ol {
+    padding: 25px;
+}
+
+#directions li {
+    list-style: decimal;
+    line-height: normal;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+/* ---------SIDE DISHES------------ */
+#sideDishes {
+    background-color: #7ABFBF;
+}
+
+#sideDishes h2 {
+    padding-top: 10px;
+}
+
+#sideDishes h3 {
+    position: relative;
+    top: 34px;
+    left: 130px;
+}
+
+#sideDishes img {
+    width: 25%;
+    padding: 10px;
+}
+
+#sideDishes span {
+    display: none;
+}
+
+#sideDishes p {
+    position: relative;
+    top: -70px;
+    left: 130px;
+    padding-bottom: 7px;
+}
+
+#sideDishes dl {
+    position: relative;
+    top: -70px;
+    left: 130px;
+}
+
+#sideDishes dt {
+    padding-bottom: 3px;
+}
+
+#sideDishes section {
+    height: 150px;
+}
+
+/* -----------NAV-------- */
+nav {
+    position: absolute;
+    top: 0px;
+    height: 90px;
+    width: 414px;
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+nav h2 {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    background-color: #F2F2F2;
+
+}
+
+nav ul img {
+    width: 10%;
+    position: relative;
+    top: -20px;
+    left: -50px;
+}
+
+nav li {
+    text-align: center;
+}
+
+nav li a {
+    display: block;
+    padding-left: 20px;
+    padding-top: 40px;
+    text-decoration: none;
+    color: #EB5428;
+}
+
+
+nav li:first-child {
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    top: 0;
+    left: 100px;
+    background-color: #EB5428;
+}
+
+nav li:first-child svg {
+    position: relative;
+    top: -20px;
+    left: -30px;
+}
+
+nav li:first-child a span {
+    visibility: hidden;
+}
+
+nav li:last-child {
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+nav li:last-child svg {
+    stroke: #EB5428;
+    position: relative;
+    top: 15px;
+    left: -10px;
+}
+
+nav li:last-child a {
+    padding: 0px;
+}
+
+nav li:last-child a span {
+    color: black;
+    position: relative;
+    top: 40px;
+    left: 35px;
+}
+
+nav li:last-child a:hover {
+    color: #EB5428;
+}
+
+/* ------ICON-------- */
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+nav label .navicon {
+    background-color: transparent;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+nav label .navicon:before,
+nav label .navicon:after {
+    background: transparent;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+nav input {
+    display: none;
+}
+
+nav input:checked~ul {
+    max-height: 600px;
+}
+
+
+
+
+/* -------SEARCH--------- */
+form label,
+form legend {
+    visibility: hidden;
+}
+
+fieldset {
+    position: absolute;
+    top: 120px;
+}
+
+form button {
+    background-color: #EB5428;
+    border: none;
+    position: relative;
+    top: 13px;
+    left: -105px;
+}
+
+form input {
+    border: 2px solid #EB5428;
+    height: 45px;
+}
+
+form input,
+form button {
+
+    margin: 0px 50px;
+}
+
+form svg {
+    stroke: #ffffff;
+}
+
+
+/* --------FOOTER--------- */
+/* ---------SOCIAL-------- */
+footer h2,
+footer h3 {
+    visibility: hidden;
+}
+
+footer ul {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    margin: auto auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: #EB5428;
+}
+
+footer svg {
+    position: relative;
+    top: -60px;
+    left: 5px;
+}
+
+/* -------CONNECT---------- */
+#connect img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: -75px;
+}
+
+#connect p {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 185px;
+    padding: 10px;
+}
+
+/* -------MEDIA QUERIES------------ */
+@media screen and (min-width: 768px) {
+    body {
+        width: 768px;
+    }
+
+    nav {
+        width: 768px;
+        height: 220px;
+    }
+
+    nav ul {
+        overflow: visible;
+        display: flex;
+    }
+
+    form {
+        position: relative;
+        top: -2750px;
+        left: 300px;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    nav li:first-child {
+        position: absolute;
+        width: 90px;
+        left: 0px;
+    }
+
+    nav li:first-child a {
+        padding: 0px;
+    }
+
+    nav li:first-child svg {
+        top: 0px;
+        left: 0px;
+    }
+
+    nav li:last-child {
+        left: 690px;
+    }
+
+    nav li:last-child svg {
+        top: 0px;
+        left: -15px;
+    }
+
+    nav li:last-child a span {
+        top: 60px;
+        left: -20px;
+    }
+
+    h1 {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    menu {
+        position: relative;
+        top: 90px;
+        background-color: #F2F2F280;
+    }
+
+    #recipe {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #details {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    #sideDishes div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #social {
+        grid-column: 2;
+    }
+
+    #connect {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+}
+
+@media screen and (min-width: 1280px) {
+    body {
+        width: 1280px;
+    }
+    nav {
+        width: 1280px;
+    }
+    header  {
+        height: 735px;
+    }
+    h1{
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 100px;
+    }
+    menu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 120px;
+        height: 523px;
+        border: 2px solid #EB5428;
+    }
+    menu li {
+        padding-bottom: 50px;
+    }
+    header img {
+        width: 30%;
+        position: relative;
+        left: 144px;
+        top: -578px;
+    }
+    header  p {
+        width: 40%;
+        position: relative;
+        top: -1160px;
+        left: 600px;
+    }
+    form {
+        top: -1725px;
+        left: 410px;
+    }
+    #details {
+        background-color: #000000;
+        color: #7ABFBF;
+    }
+    #details ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    #details li span::after {
+        content: "\a";
+        white-space: pre;
+    }
+    #recipe {
+        grid-template-columns: 1fr 3fr;
+    }
+    #sideDishes {
+        height: 400px;
+    }
+    #sideDishes div {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #sideDishes img {
+        width: 60%;
+    }
+    #sideDishes h3 {
+        top: 240px;
+        left: 10px;
+    }
+    #sideDishes p, #sideDishes dl {
+        top: 50px;
+        left: 10px;
+    }
+    #footer {
+        grid-template-columns: 1fr 2fr;
+    }
+    #social ul, #social svg {
+        padding: 15px;
+    }
+    #social svg {
+        top: 0px;
+        left: -65px;
+    }
+    #social ul {
+        position: relative;
+        left: 150px;
+        top: -40px;
+    }
+    footer p {
+        left: 150px;
+        top: -50px;
+    }
+
+}
