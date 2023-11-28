@@ -781,3 +781,58 @@ footer svg {
     }
 
 }
+@media print {
+    p, li {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    nav, form, menu, header img, header p, #connect img, #sideDishes, #social svg {
+        display: none;
+    }
+    img {
+        filter: grayscale(100%);
+    }
+    body {
+        margin: 0.5in;
+    }
+    h1 {
+        position: absolute;
+        top: 0px;
+    }
+    #recipe {
+        position: absolute;
+        top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    #details {
+        grid-column: span 2;
+        text-align: left;
+    }
+
+    #sideDishes div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2 {
+        text-align: left;
+    }
+    footer {
+        position: absolute;
+        top: 600px;
+    }
+    #connect p {
+        position: absolute;
+        top: 170px;
+    }
+    #social ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+        text-align: left;
+    }
+    #social a[href]::after {
+        content: " (" attr(href) ")"
+    }
+
+}
