@@ -617,6 +617,17 @@ footer svg {
         top: 60px;
         left: -20px;
     }
+    nav li img {
+        width: 30%;
+    }
+    nav li a {
+        padding: 0px;
+    }
+
+    nav li:nth-child(2), nav li:nth-child(3), nav li:nth-child(4), nav li:nth-child(5), nav li:nth-child(6), nav li:nth-child(7), nav li:nth-child(8) {
+        position: relative;
+        top: 140px;
+    }
 
     h1 {
         text-align: left;
@@ -667,10 +678,12 @@ footer svg {
 
     nav {
         width: 1280px;
+        height: 90px;
     }
 
     header {
         height: 735px;
+        padding-top: 80px;
     }
 
     h1 {
@@ -707,7 +720,17 @@ footer svg {
         top: -1160px;
         left: 600px;
     }
-
+    nav li:last-child {
+        left: 1200px;
+    }
+    nav li:nth-child(2), nav li:nth-child(3), nav li:nth-child(4), nav li:nth-child(5), nav li:nth-child(6), nav li:nth-child(7), nav li:nth-child(8) {
+        top: 40px;
+        left: 200px;
+        width: 120px;
+    }
+    nav li img {
+        width: 30%;
+    }
     form {
         top: -1725px;
         left: 410px;
